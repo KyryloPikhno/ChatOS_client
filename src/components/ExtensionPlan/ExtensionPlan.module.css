@@ -9,6 +9,7 @@
 .card:hover {
     transform: scale(1.1);
     border: 2px solid limegreen;
+    z-index: 10;
 }
 
 .card_body {
@@ -32,37 +33,49 @@
     border: none;
 }
 
-.ribbon {
-    font-size: 12px;
+/*.ribbon:before {*/
+/*    content: "";*/
+/*    z-index: -1;*/
+/*    overflow: hidden;*/
+/*    transform: rotate(-135deg);*/
+/*    width: 120px;*/
+/*    display: block;*/
+/*    !*background: #79A70A;*!*/
+/*    background: linear-gradient(red 0%, crimson 100%);*/
+/*    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);*/
+/*    position: absolute;*/
+/*    top: 34px;*/
+/*    right: -16px;*/
+/*    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px);*/
+/*    height: 20px;*/
+/*}*/
+
+.ribbon:after {
+    content: "POPULAR";
+    z-index: 1;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
     text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 120px;
+    display: block;
+    /*background: #79A70A;*/
+    background: linear-gradient(red 0%, crimson 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
-    width: 70px;
-    height: 70px;
-    background: crimson;
-    transform: rotate(-45deg);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    top: 15px;
-    right: -35px;
-    z-index: 10;
+    top: 20px; right: -30px;
+    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px)
 }
+
 
 .h3{
     font-size: 36px;
     font-weight: bold;
     width: 100%;
-}
-
-.ribbon span {
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.5;
-    display: block;
-    transform: rotate(45deg);
-    position: relative;
-    top: 22px;
-    left: 0;
-    width: 100%;
-    white-space: nowrap;
 }
 
 .card_success {

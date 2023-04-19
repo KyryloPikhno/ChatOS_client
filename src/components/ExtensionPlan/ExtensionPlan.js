@@ -9,13 +9,14 @@ const ExtensionPlan = ({plan}) => {
         <div className={`${css.card} ${css.my_3}`}>
             <div className={css.card_body}>
 
-                {popular && <div className={css.ribbon}><span>POPULAR</span></div>}
+                {popular && <div className={css.ribbon}></div>}
 
                 <div className={css.text_center}>
                     <h5>{period}</h5>
                     <div className={css.mt_4}>
                         <span className={`${css.h3} ${css.m_0} ${css.text_primary}`}>$</span>
                         <span className={`${css.display_2} ${css.text_primary}`}>{price}</span>
+                        {price.length >= 5 && <br/>}
                         <span>/{interval}</span>
                     </div>
                 </div>

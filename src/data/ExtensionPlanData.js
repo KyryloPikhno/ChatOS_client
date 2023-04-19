@@ -1,7 +1,7 @@
 const data = [
     {
         period: 'Free',
-        price: 0,
+        price: '0',
         interval: 'mo',
         opportunities: [
             'Word Definitions', 'Up to 10 Lists'
@@ -10,7 +10,7 @@ const data = [
     },
     {
         period: 'Monthly',
-        price: 3.99,
+        price: '3.99',
         interval: 'mo',
         opportunities: [
             'Word Definitions', 'Unlimited Lists', 'Directly add words from any site using Chrome Extension'
@@ -19,7 +19,7 @@ const data = [
     },
     {
         period: 'Yearly',
-        price: 29.99,
+        price: '29.99',
         interval: 'year',
         opportunities: [
             'Word Definitions', 'Unlimited Lists', 'Directly add words from any site using Chrome Extension'
@@ -28,7 +28,7 @@ const data = [
     },
     {
         period: 'Lifetime',
-        price: 99,
+        price: '99',
         interval: 'one time',
         opportunities: [
             'Word Definitions', 'Unlimited Lists', 'Directly add words from any site using Chrome Extension'
