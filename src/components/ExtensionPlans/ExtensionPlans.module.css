@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content__boxed {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mb_4 {
+    margin-bottom: 1.5rem;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.mt_5 {
+    margin-top: 3rem;
+}
+
+.h1 {
+    font-size: 36px;
+    font-weight: bold;
+    border:1px solid red;
+    width: 100%;
+}
+
+.d_md_flex {
+    display: flex;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
