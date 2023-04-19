@@ -1,10 +1,13 @@
-const User = () => {
-
+const User = ({user, index}) => {
+    const {name, email, age} = user;
 
     return (
-        <div>
-            User
-        </div>
+        <tr>
+            <td>{index+1}</td>
+            <td>{name}</td>
+            <td>{email}</td>
+            <td>{age}</td>
+        </tr>
     );
 };
 
