@@ -9,10 +9,17 @@ body {
     background: #edf1f6;
 }
 
-.container{
-
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.block{
-
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+

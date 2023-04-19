@@ -29,6 +29,7 @@
 
 .d_md_flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify_content_center {
