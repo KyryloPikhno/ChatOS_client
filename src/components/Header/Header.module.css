@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #25476a;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+
+.menu a[class = 'active']{
+    border-bottom: 2px solid #fff;
+}

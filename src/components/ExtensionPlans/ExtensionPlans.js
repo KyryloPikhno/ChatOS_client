@@ -1,4 +1,5 @@
 import {ExtensionPlan} from "../ExtensionPlan/ExtensionPlan";
+import {data} from '../../data/ExtensionPlanData';
 import css from './ExtensionPlans.module.css';
 
 
@@ -11,10 +12,7 @@ const ExtensionPlans = () => {
                     Google Chrome Extension Plans
                 </h2>
                 <div className={`${css.d_md_flex} ${css.justify_content_center}`}>
-                    <ExtensionPlan/>
-                    <ExtensionPlan/>
-                    <ExtensionPlan/>
-                    <ExtensionPlan/>
+                    {data.length !== 0 && data.map((plan, index) => <ExtensionPlan key={index} plan={plan}/>)}
                 </div>
             </div>
         </div>
