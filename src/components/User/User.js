@@ -6,7 +6,7 @@ import css from './User.module.css';
 import {UserAdderAndUpdater} from "../UserAdderAndUpdater/UserAdderAndUpdater";
 
 
-const User = ({user, index}) => {
+const User = ({user}) => {
     const {name, email, age, _id} = user;
 
     const [activeButton, setActiveButton] = useState(false);
@@ -25,7 +25,7 @@ const User = ({user, index}) => {
 
     return (
         <tr onMouseOver={() => setActiveButton(true)} onMouseOut={() => setActiveButton(false)}>
-            <td>{index + 1}</td>
+            <td>{_id.slice(-4)}</td>
             <td>{name}</td>
             <td>{email}</td>
             <td>{age}

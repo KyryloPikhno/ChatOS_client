@@ -10,9 +10,9 @@ const initialState = {
 
 const getAll = createAsyncThunk(
     'userSlice/getAll',
-    async (_, {rejectWithValue}) => {
+    async ({name, sort}, {rejectWithValue}) => {
         try {
-            const {data} = await userService.getAll();
+            const {data} = await userService.getAll(name, sort);
             return data;
         } catch (e) {
             return rejectWithValue(e.response.data);

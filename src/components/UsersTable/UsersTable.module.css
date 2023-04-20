@@ -12,7 +12,7 @@ td, th {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: limegreen;
     color: white;
 }
 
@@ -55,4 +55,11 @@ tr:hover {
     color: #fff;
     background-color: limegreen;
     border-color: limegreen;
+}
+
+.sorters {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -1,8 +1,11 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
+import {useSearchParams} from "react-router-dom";
 
 import {UserAdderAndUpdater} from "../UserAdderAndUpdater/UserAdderAndUpdater";
 import {userActions} from "../../redux";
+import {SearchForm} from "../SearchForm/SearchForm";
+import {Sorter} from "../Sorter/Sorter";
 import {User} from "../User/User";
 import css from './UsersTable.module.css';
 
@@ -12,14 +15,22 @@ const UsersTable = () => {
 
     const [active, setActive] = useState(false);
 
+    let [query] = useSearchParams({});
+
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(userActions.getAll());
-    }, [dispatch]);
+        dispatch(userActions.getAll({
+            name: query.get('name'),
+            sort: query.get('sort')}));
+    }, [dispatch, query]);
 
     return (
         <div>
+            <div className={css.sorters}>
+                <SearchForm/>
+                <Sorter/>
+            </div>
             <table>
                 <thead>
                 <tr>

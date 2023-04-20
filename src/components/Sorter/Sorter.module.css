@@ -1,0 +1,19 @@
+.select {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #0275d8;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+    width: 10vw;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #333333;
+}

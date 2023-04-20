@@ -1,0 +1,51 @@
+.form input {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    width: 25vw;
+    padding: 8px;
+    border: 1px solid #0275d8;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form{
+    position: relative;
+}
+
+.validButton, .noValidButton  {
+    margin-left: 4px;
+    background: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #0275d8;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+}
+
+.noValidButton {
+    border: 1px solid gray;
+    color: gray;
+    background-color: #dddddd;
+    transition: 1s;
+}
+
+.form span{
+    width: 400px;
+    color: #D81E5B;
+    font-size: 10px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+

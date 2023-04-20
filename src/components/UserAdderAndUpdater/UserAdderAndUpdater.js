@@ -1,11 +1,11 @@
 import {joiResolver} from "@hookform/resolvers/joi/dist/joi";
 import {useDispatch} from "react-redux";
 import {userActions} from "../../redux";
+import {useEffect} from "react";
 import {useForm} from "react-hook-form";
 
 import {userValidator} from "../../validators";
 import css from './UserAdderAndUpdater.module.css';
-import {useEffect} from "react";
 
 
 const UserAdderAndUpdater = ({setActive, update, user}) => {
