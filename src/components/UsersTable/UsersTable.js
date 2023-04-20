@@ -1,8 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 
-import {userActions} from "../../redux";
 import {UserAdderAndUpdater} from "../UserAdderAndUpdater/UserAdderAndUpdater";
+import {userActions} from "../../redux";
 import {User} from "../User/User";
 import css from './UsersTable.module.css';
 
@@ -39,7 +39,8 @@ const UsersTable = () => {
                 active && <UserAdderAndUpdater setActive={setActive}/>
             }
             {
-                !active && <div className={css.box}>
+                !active &&
+                <div className={css.box}>
                     <button onClick={() => setActive(true)}>Add user</button>
                 </div>
             }

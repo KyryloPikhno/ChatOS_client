@@ -31,7 +31,7 @@ const User = ({user, index}) => {
             <td>{age}
                 {activeButton && <button className={css.update} onClick={() => setActive(true)}>Update</button>}
                 {activeButton && <button className={css.delete} onClick={() => deleter(_id)}>Delete</button>}
-                {active && <UserAdderAndUpdater setActive={setActive} update={true} userId={_id}/>}
+                {active && <UserAdderAndUpdater setActive={setActive} update={true} user={{...user}}/>}
             </td>
         </tr>
     );
