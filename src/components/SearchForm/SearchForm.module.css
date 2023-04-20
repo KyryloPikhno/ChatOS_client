@@ -49,3 +49,9 @@
     left: 20px;
 }
 
+@media (max-width: 768px) {
+    .form input {
+        width: 150px;
+    }
+}
+

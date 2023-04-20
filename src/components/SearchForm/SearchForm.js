@@ -30,13 +30,13 @@ const SearchForm = () => {
             setQuery(findObj);
 
         } catch (e) {
-            console.log(e.message)
+            console.log(e.message);
         }
     }
 
     return (
         <form className={css.form} onSubmit={handleSubmit(submit)}>
-            <input type='text' placeholder={'search by name'} {...register('name')}/>
+            <input type='text' placeholder={'enter name'} {...register('name')}/>
             {errors.name && <span>{errors.name.message}</span>}
 
             <button className={!isValid ? css.noValidButton : css.validButton} disabled={!isValid}>Search</button>

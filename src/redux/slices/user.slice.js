@@ -2,6 +2,7 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {userService} from "../../services";
 
+
 const initialState = {
     users: [],
     loading: false,

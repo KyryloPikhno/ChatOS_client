@@ -35,3 +35,25 @@
     border-color: red;
 }
 
+
+@media (max-width: 768px) {
+    .m_group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .update {
+        margin-left:25px
+    }
+
+    .delete{
+        margin-top: 4px;
+        margin-left:25px
+    }
+}
+
+
+

@@ -17,3 +17,9 @@ select option {
     background-color: #ffffff;
     color: #333333;
 }
+
+@media (max-width: 768px) {
+    .select{
+        width: 120px;
+    }
+}
