@@ -1,4 +1,4 @@
-import {Footer, Header} from "../../components";
+import {Header} from "../../components";
 import {Outlet} from "react-router-dom";
 
 import css from './MainLatout.module.css';
@@ -14,9 +14,9 @@ const MainLayout = () => {
             <div className={css.block}>
                 <Outlet/>
             </div>
-            <div className={css.block}>
-                <Footer/>
-            </div>
+            {/*<div className={css.block}>*/}
+            {/*    <Footer/>*/}
+            {/*</div>*/}
         </div>
     );
 };

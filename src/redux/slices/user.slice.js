@@ -2,7 +2,6 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {userService} from "../../services";
 
-
 const initialState = {
     users: [],
     loading: false,
@@ -35,9 +34,9 @@ const create = createAsyncThunk(
 
 const update = createAsyncThunk(
     'userSlice/update',
-    async ({user}, {rejectWithValue}) => {
+    async ({userId, user}, {rejectWithValue}) => {
         try {
-            const {data} = await userService.update(user);
+            const {data} = await userService.update(userId,user);
             return data;
         } catch (e) {
             return rejectWithValue(e.response.data);

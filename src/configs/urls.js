@@ -1,7 +1,7 @@
 const baseURL = 'https://chatos-server.herokuapp.com';
 
 const url = {
-    table: 'table'
+    table: '/table'
 };
 
 export {baseURL, url};
