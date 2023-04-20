@@ -1,4 +1,3 @@
-import {useDispatch} from "react-redux";
 import {joiResolver} from "@hookform/resolvers/joi/dist/joi";
 import {useForm} from "react-hook-form";
 import {useSearchParams} from "react-router-dom";
@@ -15,8 +14,6 @@ const SearchForm = () => {
     });
 
     const [query, setQuery] = useSearchParams();
-
-    const dispatch = useDispatch();
 
     const submit = async ({name}) => {
         try {

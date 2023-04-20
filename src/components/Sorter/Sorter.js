@@ -23,9 +23,9 @@ const Sorter = () => {
     }
 
     return (
-            <select value={query.get('sort') || 'Ascending name'} className={css.select} onChange={handleSelectChange}>
-                <option value="asd">Ascending name</option>
-                <option value="desc">Descending name</option>
+            <select value={query.get('sort') || 'from new to old'} className={css.select} onChange={handleSelectChange}>
+                <option value="asd">from new to old</option>
+                <option value="desc">from old to new</option>
             </select>
     );
 };
